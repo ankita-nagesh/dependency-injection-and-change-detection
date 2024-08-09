@@ -1,0 +1,17 @@
+<div class="card text-center mt-3 bg-primary-subtle">
+  <div class="card-body">
+    <h5 class="card-title">Hello from Parent</h5>
+    <p><b>Root : </b>{{ dataService.message }}</p>
+    <p><b>Self : </b>{{ selfDataService.message }}</p>
+    <button
+      type="button"
+      class="btn btn-primary"
+      (click)="updateMessage()"
+      title="Update message"
+    >
+      Update
+    </button>
+
+    <app-child></app-child>
+  </div>
+</div>

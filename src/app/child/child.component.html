@@ -1,0 +1,18 @@
+<div class="card text-center mt-3">
+  <div class="card-body">
+    <h5 class="card-title">Hello from Child</h5>
+
+    <p><b>Root : </b>{{ dataService.message }}</p>
+    <p><b>Parent : </b>{{ parentDataService.message }}</p>
+    <p><b>Child/Self : </b>{{ selfDataService.message }}</p>
+
+    <button
+      type="button"
+      class="btn btn-primary"
+      title="refresh to get updated parent message"
+      (click)="refresh()"
+    >
+      refresh
+    </button>
+  </div>
+</div>
