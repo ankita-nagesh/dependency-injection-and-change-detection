@@ -39,6 +39,13 @@ Tree Shaking: Unused code can be eliminated, resulting in smaller bundle sizes.
 # This Demo
 This Angular project demonstrates these concepts through practical examples. You can explore how change detection works with both default and OnPush strategies. Additionally, you'll see how to inject dependencies into components and understand the hierarchical nature of Angular's DI system.
 
+- There is three section one for root , one for parent and one for its child.
+- Each section has injected DataService ,differenty using decorator limit scope for Injected service.
+- Parent component instance is used in child and child used change detection onPush so it will not update until i click refresh button.
+- From parent i can update my message clicking on update button.
+- From Root i updated root service instance message ,which will immedietely reflect on parent component as it was using default change detection.
+- In child Component the root message will not update as it provided by creating separate token.
+
 ## Usage
 - Clone the repository.
 - Install dependencies: npm install
